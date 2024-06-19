@@ -1,10 +1,20 @@
-main{
-    width: 80%;
-    margin: auto;
-    .mobile{
-        background-color: black;
-        width: 200px;
-        height: 600px;
-       position: absolute;
+@use '../mixins/pseudo.scss' as*;
+
+.main{
+    &::after , &::before{
+        @include pseudo (510px,1018px);
+        left: -322px;
+        top: -500px;
+        background-image: var(--gradient);
+        border-radius: 15.9375rem;
+        z-index: -1;
+    }
+
+    &::before{
+        left: 177px;
+        top: 450px;
+        background-image: var(--gradient);
+        opacity: 0.3;
+        z-index: -1;
     }
 }

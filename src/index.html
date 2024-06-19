@@ -8,16 +8,30 @@
     <!-- CAMBIA EL TITLE!!! -->
     <title>Vite Template</title>
   </head>
-  <body class="body">
-    <div class="background">
-
-    </div>
-    <main>
+  <body >
+    <main class="main">
       <div class="mobile">
-
+        <div class="mobile__header">
+            <img class="icon-arrow" src="assets/images/arrow.svg" alt="">
+            <div class="user">
+                <img class="user__profile--image" src="assets/images/avatar.jpg" alt="">
+                <div class="user__info">
+                  <span class="user__name">Samuel Green</span>
+                  <span class="user__status">Available to Walk</span></div>
+            </div>
+        <img class="icon-points" src="assets/images/butons.svg" alt="">
       </div>
-      <div class="info">
-
+      <div class="mobile__messages">
+          <p class="mobile__message">That sounds great. I’d be happy to discuss more.</p>
+          <p class="mobile__message">Could you send over some pictures of your dog, please?</p>
+      </div>
+      <div class="mobile__message--container mobile__message--right">
+        <img  src="assets/images/dog-image-1.jpg" alt="">
+        <img src="assets/images/dog-image-2.jpg" alt="">
+        <img  src="assets/images/dog-image-3.jpg" alt="">
+      </div>
+      <p class="mobile__message--right">Here are a few pictures. She’s a happy girl!</p>
+      <p class="mobile__message--right">Can you make it?</p>
       </div>
     </main>
     <script type="module" src="./js/index.js"></script>
