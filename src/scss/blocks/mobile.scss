@@ -39,7 +39,7 @@
     &__message{
         color: var(--message-color);
         width: 50%;
-        padding:6px 9px ;
+        padding:6px 8px ;
         border-radius: 18px 10px 10px 4px;
         background-color: var(--message-background);
         font-size: 0.5rem;
@@ -58,5 +58,51 @@
         &--right:not(&--container){
             background-color: #fff;
         }
+        &--pay{
+            background-image:var(--gradient);
+            width: 60%;
+            height: 25px;
+            padding: 6px 9px;
+            border-radius: 10px 10px 10px 4px;
+            display: flex;
+            align-items: center;
+            color: white;
+            justify-content: space-between;
+            font-size: 0.6rem;
+            margin-bottom: 10px;
+            .circle{
+                border: 1px solid white;
+                border-radius:  50%; ;
+                width: 10px;
+                height: 10px;
+            }
+        }
+        &--bar{
+            margin-top: 15px;
+            width: 213px;
+            height: 40px;
+            background-color: white;
+            border-radius: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .text-bar{
+                color: gray;
+                margin-left: 25px;
+                font-size: 0.7rem;
+            }
+            .arrow-bar{
+                background-color: #3E2753;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 10px;
+                img{
+                    margin-top: 7px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
     }
 }
